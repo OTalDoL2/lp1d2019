@@ -1,0 +1,22 @@
+    Console.WriteLine("Digite o valor para saber a sequencia de Fibonacci");
+            int sequencia = int.Parse(Console.ReadLine());
+            int seqUm = 0;
+            int seqDois = 1;
+            int seqAux = 0;
+            for (int i = 1; i < sequencia; i++)
+            {
+               
+                seqAux = seqUm + seqDois;
+                seqUm = seqDois;
+                seqDois = seqAux;
+                
+                
+            }
+            if(sequencia == 0)
+            {
+                Console.WriteLine("A sequencia de Fibonacci é: " + sequencia);
+            }
+            else
+            {
+                Console.WriteLine("A sequencia de Fibonacci é: " + seqDois);
+            

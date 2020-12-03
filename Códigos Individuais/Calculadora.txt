@@ -1,0 +1,79 @@
+
+        public static int Soma(int x, int y)
+        {
+            int z = x + y;
+            return z;
+        }
+        public static int Subtração(int x, int y)
+        {
+            int z = x - y;
+            return z;
+        }
+        public static int Multip(int x, int y)
+        {
+            int z = x * y;
+            return z;
+        }
+
+        public static int Divisão(int x, int y)
+        {
+            int z = x / y;
+            return z;
+        }
+
+        static void Main(string[] args)
+        {
+            int inicial;
+            Console.WriteLine("----- CALCULADORA -----");
+            Console.WriteLine("\nDigite 1 - Somar");
+            Console.WriteLine("Digite 2 - Subtrair");
+            Console.WriteLine("Digite 3 - Multiplicar");
+            Console.WriteLine("Digite 4 - Dividir");
+            Console.WriteLine("Digite 5 - Potenciação");
+            Console.WriteLine("Digite 6 - Raiz Quadrada");
+
+
+
+            inicial = int.Parse(Console.ReadLine());
+            switch(inicial)
+            {
+                case 1:
+                            int x;
+                            int y;
+                            Console.Write("Insira o 1° núm.");
+                            x = int.Parse(Console.ReadLine());
+                            Console.Write("Insira o 2° núm.");
+                            y = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Soma: " + Soma(x, y));
+                    break;
+                case 2:
+                    int a;
+                    int b;
+                    Console.Write("Insira o 1° núm.");
+                    a = int.Parse(Console.ReadLine());
+                    Console.Write("Insira o 2° núm.");
+                    b = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Subtração: " + Subtração(a, b));
+                    break;
+                case 3:
+                    int c;
+                    int d;
+                    Console.Write("Insira o 1° núm.");
+                    c = int.Parse(Console.ReadLine());
+                    Console.Write("Insira o 2° núm.");
+                    d = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Multiplicação: " + Multip(c, d));
+                    break;
+                case 4:
+                    int e;
+                    int f;
+                    Console.Write("Insira o 1° núm.");
+                    e = int.Parse(Console.ReadLine());
+                    Console.Write("Insira o 2° núm.");
+                    f = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Divisão: " + Divisão(e, f));
+                    break;
+            }
+
+            
+        }

@@ -1,0 +1,210 @@
+using System.Threading; 
+
+for (int i = 0; i < 100; i++)
+{
+Console.ForegroundColor = ConsoleColor.Magenta;
+Console.WriteLine("");
+Console.WriteLine("####### C A L C U L A D O R A #######");
+Console.WriteLine("Feita by = Gustavo 1d xD");
+Console.WriteLine("");
+Console.WriteLine("Digite o operador que você deseja usar");
+Console.WriteLine("");
+
+Console.WriteLine("use + caso queira somar");
+Console.WriteLine("use - caso queira subtrair");
+Console.WriteLine("use * caso queira multiplicar");
+Console.WriteLine("use / caso queira dividir ");
+Console.WriteLine("use ; caso queira tirar a raiz quadrada de um número");
+Console.WriteLine("use $ caso queira realizar uma equação do 2° grau ");
+Console.WriteLine("use ^ caso queira calcular a hipotenusa de um número ");
+Console.WriteLine("Use ? caso queria saber se um número é primo");
+Console.WriteLine("use % caso queira tirar a porcentagem de um número");
+Console.WriteLine("use ! caso queira acabar com a calculadora");
+
+Console.WriteLine("");
+char a = char.Parse(Console.ReadLine());
+if (a == '+')
+{
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("");
+Console.WriteLine("Digite o primeiro termo que deseja somar");
+double b = Double.Parse(Console.ReadLine());
+Console.WriteLine("Agora o segundo");
+double c = Double.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("A soma da = " + (b + c));
+Thread.Sleep(2000);
+Console.Clear();
+}
+
+else if (a == '*')
+{
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("");
+Console.WriteLine("Digite o primeiro termo que deseja multiplicar");
+double b = Double.Parse(Console.ReadLine());
+Console.WriteLine("Agora o segundo");
+double c = Double.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("A multiplicação da = " + (b * c));
+Thread.Sleep(2000);
+Console.Clear();
+
+}
+
+
+else if (a == '-')
+{
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("");
+Console.WriteLine("Digite o primeiro termo que deseja subtrair");
+double b = Double.Parse(Console.ReadLine());
+Console.WriteLine("Agora o segundo");
+double c = Double.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("A subtração da = " + (b - c));
+Thread.Sleep(2000);
+Console.Clear();
+}
+else if (a == '/')
+{
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("");
+Console.WriteLine("Digite o primeiro termo que deseja dividir pelo segundo termo");
+double b = Double.Parse(Console.ReadLine());
+Console.WriteLine("Agora o segundo");
+double c = Double.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("A divisão da = " + (b / c));
+Thread.Sleep(2000);
+Console.Clear();
+}
+else if (a == '!')
+{
+
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("");
+Console.WriteLine("Porque você quis terminar comigo? :(");
+break;
+}
+else if (a == '^')
+{
+Console.ForegroundColor = ConsoleColor.Green;
+Double hipotenusa = 0;
+Console.WriteLine("Digite 2 números para calcular sua hipotenusa");
+Console.WriteLine("");
+Console.WriteLine("Digite o 1o");
+Double b = Double.Parse(Console.ReadLine());
+Console.WriteLine("Digite o 2o");
+Double c = Double.Parse(Console.ReadLine());
+Double d = 0;
+b = b * b;
+c = c * c;
+d = b + c;
+hipotenusa = Math.Sqrt(d);
+Console.WriteLine("");
+Console.WriteLine("A hipotenusa dá " + hipotenusa);
+Thread.Sleep(2000);
+Console.Clear();
+
+}
+else if (a == ';')
+{
+Console.ForegroundColor = ConsoleColor.Green;
+double raizquadrada = 0;
+Console.WriteLine("Digite um número para que eu possa tirar sua raiz quadrada");
+double b = int.Parse(Console.ReadLine());
+raizquadrada = Math.Sqrt(b);
+Console.WriteLine("");
+Console.WriteLine("A raiz quadrada desse numero é " + raizquadrada);
+Thread.Sleep(2000);
+Console.Clear();
+
+}
+else if (a == '$')
+
+{
+Console.ForegroundColor = ConsoleColor.Green;
+double resultado_delta = 0;
+double delta = 0;
+Console.WriteLine("Digite o termo ax²");
+double ab = double.Parse(Console.ReadLine());
+Console.WriteLine("");
+
+Console.WriteLine("Digite o termo bx");
+double b = double.Parse(Console.ReadLine());
+Console.WriteLine("");
+
+Console.WriteLine("Digite o termo c");
+double c = double.Parse(Console.ReadLine());
+Console.WriteLine("");
+
+delta = (b * b) - 4 * ab * c;
+resultado_delta = Math.Sqrt(delta);
+
+Console.WriteLine("X1 é igual a " + (-b + resultado_delta) / (2 * ab));
+Console.WriteLine("X2 é igual a " + (-b - resultado_delta) / (2 * ab));
+Thread.Sleep(2000);
+Console.Clear();
+
+}
+else if (a == '@')
+{
+int resultado = 1;
+Console.WriteLine("Digite a base");
+int basesinha = int.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("Digite o expoente");
+int expoente = int.Parse(Console.ReadLine());
+for (int repet = 0; repet < expoente; repet++)
+{
+resultado = basesinha * resultado;
+}
+Console.WriteLine("");
+Console.WriteLine("O resultado da potenciação é = " + resultado);
+Thread.Sleep(2000);
+Console.Clear();
+}
+else if (a == '%')
+{
+double c = 0;
+Console.WriteLine("Digite quantos por cento você quer tirar do número ");
+double j = double.Parse(Console.ReadLine());
+Console.WriteLine("Digite o numero qual você quer diminuir a porcentagem ");
+double b = double.Parse(Console.ReadLine());
+c = (j / 100) * b;
+Console.WriteLine("");
+Console.WriteLine("O resultado é igual a " + c);
+Thread.Sleep(2000);
+Console.Clear();
+
+
+}
+else if (a == '?')
+{
+Console.WriteLine("Informe o número para que eu verifique se o mesmo é primo");
+int numprimo = int.Parse(Console.ReadLine());
+int cont = 0;
+for (int x = numprimo; x > 0; x--)
+{
+if (numprimo % x == 0)
+{
+cont++;
+}
+}
+if (cont == 2)
+{
+Console.WriteLine("O número " + numprimo + " é primo");
+Thread.Sleep(2000);
+Console.Clear();
+}
+else
+{
+Console.WriteLine("O número " + numprimo + " não é primo");
+Thread.Sleep(2000);
+Console.Clear();
+}
+
+}
+
+}

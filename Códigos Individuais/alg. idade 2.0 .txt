@@ -1,0 +1,21 @@
+static int Data(age)
+        {
+            var birthdate = new DateTime(year, month, day);
+            var today = new DateTime(2019, 4, 29);
+            int age = today.Year - birthdate.Year;
+            if (birthdate > today.AddYears(-age)) age--;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.Write("Insira seu Nome: ");
+            string nameUser = Console.ReadLine();
+            Console.WriteLine("Insira sua Data de Nascimento: ");
+            Console.Write("     Dia: ");
+            int day = int.Parse(Console.ReadLine());
+            Console.Write("     Mês: ");
+            int month = int.Parse(Console.ReadLine());
+            Console.Write("     Ano: ");
+            int year = int.Parse(Console.ReadLine());
+
+        }

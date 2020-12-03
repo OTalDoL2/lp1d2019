@@ -1,0 +1,88 @@
+
+Console.WriteLine(" Olá, bem vindo ao conversor de temperatura \n");
+            double C;
+            double K;
+            double F;
+
+            Console.WriteLine(" Se você quer converter de Celsius para Fahrenheit... digite 1 e aperte enter: ");
+            Console.WriteLine(" Se você quer converter de Fahrenheit para Celsius... digite 2 e aperte enter: ");
+            Console.WriteLine(" Se você quer converter de Fahrenheit para Kelvin... digite 3 e aperte enter: ");
+            Console.WriteLine(" Se você quer converter de Kelvin para Fahrenheit... digite 4 e aperte enter: ");
+            Console.WriteLine(" Se você quer converter de Kelvin para Celsius... digite 5 e aperte enter: ");
+            Console.WriteLine(" Se você quer converter de Celsius para Kelvin... digite 6 e aperte enter: ");
+            int num = int.Parse(Console.ReadLine());
+            Console.Clear();
+
+            switch (num)
+            {
+                case 1:
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.37));
+                    Console.Write("Digite um número em °C, que será convertido para Fahrenheit: ");
+                    C = Convert.ToDouble(Console.ReadLine());
+                    F = C * 9 / 5 + 32;
+                    Console.Write(C + "°C é igual a ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.8));
+                    Console.WriteLine(F + " Fahrenheit \n \n");
+                    break;
+
+                case 2:
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.37));
+                    Console.Write("Digite um número em °F, que será convertido em Graus Celsius: ");
+                    F = Convert.ToDouble(Console.ReadLine());
+                    C = ((F - 32) * 5 / 9);
+                    Console.Write(C + "°F é igual a ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.8));
+                    Console.WriteLine(F + " Graus Celsius \n \n");
+                    break;
+
+                case 3:
+                    Console.Write("Digite um número em °F, que será convertido em Kelvin: ");
+                    F = Convert.ToDouble(Console.ReadLine());
+                    K = ((F - 32) * 5 / 9 + 273.15);
+                    Console.Write(F + "°F é igual a ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.8));
+                    Console.WriteLine(+K + " Kelvin\n");
+                    break;
+
+                case 4:
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.86));                   
+                    Console.WriteLine("Digite um número em Kelvin, que será convertido para Fahrenheit: ");
+                    K = Convert.ToDouble(Console.ReadLine());
+                    F = ((K - 273.15) * 9 / 5 + 32);
+                    Console.Write(F + " Kelvin é igual a ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.8));
+                    Console.WriteLine(+K + " Fahrenheit\n");
+                    break;
+
+                case 5:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.86));
+                    Console.WriteLine("Digite um número em Kelvin, que será convertido para Graus Celsius:");
+                    K = Convert.ToDouble(Console.ReadLine());
+                    C = (K - 273.15);
+                    Console.Write(K + " Kelvin é igual a ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.8));
+                    Console.WriteLine(C + " Graus celsius\n");
+                    break;
+
+                case 6:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(0.86));
+                    Console.WriteLine("Bem, e pra finalizar, Diga um número em Kelvin, para eu converter em Celsius.");
+                    C = Convert.ToDouble(Console.ReadLine());
+                    K = C + 273.15;
+                    Console.Write(K + "°C é igual a ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.8));
+                    Console.WriteLine(C + " Kelvin\n");
+                    break;
+
+                default:
+                    Console.WriteLine(" Por favor selecione uma opção de 1 a 6");
+                    break;
+
+            }        
+
+        Console.WriteLine("FIM\nObrigado pelo Teste!!!!!!!");
+
+

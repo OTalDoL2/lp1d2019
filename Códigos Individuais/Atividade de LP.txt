@@ -1,0 +1,250 @@
+//System.Threading.Thread.Sleep(TimeSpan.FromSeconds());        comando para esperar X tempo
+
+
+
+            //1. Faça um programa que exiba o valor de 0 a 9 na tela;
+
+            //Console.WriteLine("Questão 1");
+            //System.Threading.Thread.Sleep(TimeSpan.FromSeconds(3));
+            //int numQ1 = 0;
+            //while (numQ1 < 10)
+            //{
+            //    Console.WriteLine(numQ1);
+            //    System.Threading.Thread.Sleep(TimeSpan.FromMilliseconds(100));
+            //    numQ1++;
+            //}
+
+
+
+
+
+
+
+
+            //2. Faça um programa que conte de 5 em 5 até 100;
+
+            //Console.WriteLine("\n \n Questão 2");
+            //int numQ2 = 0;
+            //while (numQ2<=100)
+            //{
+            //    Console.WriteLine(numQ2);
+            //    numQ2 += 5;
+            //}
+
+
+
+
+
+
+
+
+
+
+
+
+            //3. Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.
+
+            //Console.WriteLine("\n \n Questão 3");
+            //Console.WriteLine("Digite 10 Números (Podem ser Negativos ;) \n");
+
+            //int valor = 0;
+            //int numNega = 0;
+            //int contador = 0;
+
+            //do
+            //{
+            //    contador++;
+            //    Console.WriteLine("Digite: ");
+            //    valor = int.Parse(Console.ReadLine());
+            //    if (valor < 0) 
+            //    {
+            //        numNega++;
+            //    }
+            //} while (contador < 5);
+            //Console.WriteLine("Tu digitou "+ numNega + " Números negativos");
+
+
+
+
+
+
+
+
+            //4. Escreva um algoritmo para ler 5 números e ao final da leitura escrever a soma total dos números lidos.
+
+            //int soma = 0;
+            //int contador = 0;
+            //Console.WriteLine("Digite 5 números... e mostrarei a soma deles...");
+            //while (contador < 5)
+            //{
+            //    int num = int.Parse(Console.ReadLine());
+            //    soma = soma + num;
+            //    contador++;
+            //}
+            //Console.WriteLine("\n \n" + soma);
+
+
+
+
+
+
+
+
+            //5. Faça um programa que deve receber dois valores do usuário e realizar a multiplicação desses dois valores sem utilizar o operador de multiplicação (*).
+
+            //int resultado = 0;
+            //Console.Write(" Digite o primeiro número: ");
+            //int n1 = int.Parse(Console.ReadLine());
+            //Console.Write(" Digite o segundo número: ");
+            //int n2 = int.Parse(Console.ReadLine());
+            //int contador = 0;
+            //while(contador < n2)
+            //{
+            //    resultado = resultado + n1;
+            //    contador++; 
+
+            //}
+
+            //Console.WriteLine( " " + n1 + " x " + n2 + " = " + resultado);
+
+
+
+
+
+            //            //6. Faça um novo programa:
+            //            Teste a questão com os seguintes valores para a variável que
+            //            armazena a idade: 7, 14, 18, 22, 27, 47.
+            //            a) Crie uma variável que armazenará a idade de uma pessoa;
+            //            b) Verifique se a idade dessa pessoa é maior do que 18 e
+            //            imprima se essa pessoa é maior ou não de idade;
+            //            c) Caso o usuário tenha mais de 18 anos, calcule quantos anos faltam para que ele atinja 30 anos de idade.
+
+            //Por exemplo: A pessoa tem 27 anos.Neste caso faltam 3 anos
+            //para que ela complete 30 anos.No output teremos o seguinte:
+            //            Ainda faltam 3 anos para você completar 30 anos.
+            //            Ainda faltam 2 anos para você completar 30 anos.
+            //            Ainda faltam 1 anos para você completar 30 anos.
+            //            Você completou 30 anos.
+
+            int completo = 30;
+
+            Console.Write(" diga sua idade: ");
+            int idade = int.Parse(Console.ReadLine());
+            if(idade < 18)
+            {
+                Console.WriteLine(" Você é menor de idade.");
+            }
+            else
+            {
+                Console.WriteLine(" Você é maior de idade.");
+                completo = completo - idade;
+                while (completo > 0)
+                {
+                    Console.WriteLine("faltam " + completo + " anos para você completar 30 anos");
+                    completo--;
+                }
+                Console.WriteLine(" Você tem 30 anos");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/q1
+            //int contador = 1;
+            //int alg = 10;
+            //while (contador < 11)
+
+            //{
+            //    Console.WriteLine(alg);
+            //    alg--;
+            //    contador++;
+            //}
+
+            //q2
+
+            //Console.WriteLine("Digite 3 números eno final vamos somar esses 3 números que você digitou");
+
+
+            //int cont = 0;
+            //while (cont < 3)
+            //{
+            //    int num1 = int.Parse(Console.ReadLine());
+            //    cont++;
+
+
+            //}
+
+
+            //q3
+            //Console.WriteLine("Programa com todos os números ímpares, até 100");
+            //int cont = 0;
+            //int imp = (3 % 2);
+            // while(cont<50)
+            //{
+            //    Console.WriteLine(imp);
+            //    imp = imp + 2;
+            //    cont++;
+            //}
+
+            ////q4
+            //Console.WriteLine("Digite 5 numero, que no final diremos qual o maior.");
+
+            //int cont = 0;
+            //int num = 0;
+            //while (cont < 5)
+            //{
+            //    num = int.Parse(Console.ReadLine());
+            //    cont++;
+            //    int tt = (num + num + num + num + num);
+
+
+
+
+            //    }
+
+            //    //Console.WriteLine("O numero é " + num1);
+
+            //    //q5
+
+            //int alunos;
+            //alunos = int.Parse(Console.ReadLine());
+            //int contador = 0;
+
+            //do
+            //{
+            //    int notas = int.Parse(Console.ReadLine());
+
+            //} while (contador < alunos);
+
+            //   notas = int.Parse(Console.ReadLine());
+            // {      
+            //    } 
+            //    Console.WriteLine("Media: " + (notas / alunos));
+
+
+            //}
+
+            //q6
+
+            int cont = 0;
+            int num;
+            num = int.Parse(Console.ReadLine());
+
+
+            while (cont < 10)
+            {
+                Console.WriteLine(num + "x1=" + );
+            }

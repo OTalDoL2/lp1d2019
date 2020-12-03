@@ -1,0 +1,241 @@
+for (int k = 0; k < 14; k++)
+           {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Seja Bem-Vindo ao conjunto de algoritmos!!!!!!!!!!!\nEu venho por meio desses algoritmos responder as questôes propostas em sala de aula, utilizando o FOR");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(3.5));
+                Console.WriteLine("\nLista de Questões: ");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("\nQuest 01 - Escreva um algoritmo para imprimir os números de 1(inclusive) a 10(inclusive)em ordem crescente.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 02 - Escreva um algoritmo para imprimir os números de 1(inclusive) a 10(inclusive)em ordem decrescente.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 03 - Faça um programa em C# que imprima a soma dos números de 1 até 100.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 04 - Ler 2 valores, calcular e escrever a soma dos inteiros existentes entre os 2 valores lidos(incluindo os valores lidos na soma).\nConsidere que o segundo valor lido será sempre maior que o primeiro valor lido.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 05 - Faça um programa em C# que imprima todos os múltiplos de 3, entre 1 e 100.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 06 - Escreva um algoritmo que calcule e imprima a tabuada que você quiser. - Questâo Modificada.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 07 - Escreva um algoritmo que leia um conjunto de 20 números inteiros e mostre qual foi o maior e o menor valor fornecido.");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.WriteLine("Quest 08 - Dado um número “N”, imprimir na tela a sequência de Fibonacci até a posição do número informado. (Fibonacci)");
+                    System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                Console.Write("\nDigite a Questão que você deseja \"Testar\": ");
+                int quest = int.Parse(Console.ReadLine());
+                Console.Clear();
+
+                    switch (quest)
+                    {
+                        case 1:
+                        //Quest 01 - Escreva um algoritmo para imprimir os números de 1(inclusive) a 10(inclusive)em ordem crescente.
+                        
+                        Console.WriteLine("Quest 01 - Escreva um algoritmo para imprimir os números de 1(inclusive) a 10(inclusive)em ordem crescente.");
+                            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                        int n = 1;
+                            for (int a = 0; a < 10; a++)
+                            {
+
+                                Console.WriteLine(n);
+                                n++;
+                            
+                            }
+                            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                        Console.Clear();
+                        break;
+
+                        case 2:
+                        //Quest 02 - Escreva um algoritmo para imprimir os números de 1(inclusive) a 10(inclusive)em ordem decrescente.
+                        Console.WriteLine("Quest 02 - Escreva um algoritmo para imprimir os números de 1(inclusive) a 10(inclusive)em ordem decrescente.");
+                            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                        int n2 = 10;
+                            for (int b = 0; b < 10; b++)
+                            {
+                                Console.WriteLine(n2);
+                                n2--;
+                            
+                            }
+                            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                        Console.Clear();
+                        break;
+                        case 3:
+                            //Quest 03 - Faça um programa em C# que imprima a soma dos números de 1 até 100.
+                            Console.WriteLine("Quest 03 - Faça um programa em C# que imprima a soma dos números de 1 até 100.");
+                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                        int n3 = 1;
+                            int n4 = n3 + 1;
+                            for (int c = 0; c < 50; c++)
+                            {
+                                Console.WriteLine(n3 + " + " + n4 + " = " + (n3 + n4));
+                                n3++;
+                                n4++;
+                                int n5 = n3 + n4;
+                            
+                        }
+                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                        Console.Clear();
+                        break;
+                        case 4:
+                            //Quest 04 - Ler 2 valores, calcular e escrever a soma dos inteiros existentes entre os 2 valores lidos(incluindo os valores lidos na soma). Considere que o segundo valor lido será sempre maior que o primeiro valor lido.            
+
+                            Console.WriteLine("Quest 04 - Ler 2 valores, calcular e escrever a soma dos inteiros existentes entre os 2 valores lidos(incluindo os valores lidos na soma). Considere que o segundo valor lido será sempre maior que o primeiro valor lido.");
+                        
+                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Bem Vindo ao Programa de Decomposição Númerica");
+                        Console.WriteLine("\nSe deseja utilizar o Programa que diz a soma de números entre a diferença de 2 números, Digite 1");
+                        Console.WriteLine("Se deseja utilizar o Programa que diz a soma dos algarismos anteriores de um número, digite 2");
+                        Console.Write("Eu desejo utilizar o programa ");
+                        int num6 = int.Parse(Console.ReadLine());
+                        Console.Clear();
+                            switch (num6)
+                            {
+                                case 1:
+                                    Console.WriteLine("Digite dois valores, que eu direi a soma dos números que existem entre eles");
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("OBS.: O Segundo número tem que ser maior");
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    int val = int.Parse(Console.ReadLine());
+                                    int valorInicial1 = val;
+                                    int val2 = int.Parse(Console.ReadLine());
+                                    int valorInicial2 = val2;
+                                    int val3 = (val2 - val);
+
+                                    int dec1 = (valorInicial2 - valorInicial1);
+                                    for (int d = 0; d < (valorInicial2 - valorInicial1); d++)
+                                    {
+                                        Console.WriteLine("1° Valor " + val + " - 2° Valor = " + val2);
+                                        val2--;
+                                        dec1 = dec1 + val2;
+                                    }
+                                    Console.WriteLine("\nValor da soma de tudim: " + dec1);
+
+                                    break;
+
+                                case 2:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    Console.WriteLine("Digite qual será o primeiro valor, e depois você ver a soma de seus termos anteriores: ");
+
+                                    int val4 = int.Parse(Console.ReadLine());
+                                    int valorInicial3 = val4;
+                                    int dec3 = valorInicial3;
+                                    for (int e = 0; e < valorInicial3; e++)
+                                    {
+                                        Console.WriteLine("1° Valor: " + val4 + "                                                                                        " + val4);
+                                        val4--;
+                                        dec3 = dec3 + val4;
+                                    }
+                                    Console.WriteLine("                                                                                             +_______________");
+                                    Console.WriteLine("A soma de todos os numeros inteiros (anteriores ao valor 1) é: " + dec3 + "                                  " + dec3);
+
+                                    Console.WriteLine("\n");
+
+                                    Console.WriteLine("Digite qual será o segundo valor, e depois você ver a soma de seus termos anteriores: ");
+                                    int val5 = int.Parse(Console.ReadLine()); ;
+                                    int valorInicial4 = val5;
+                                    int dec4 = valorInicial4;
+                                    for (int f = 0; f < valorInicial4; f++)
+                                    {
+                                        Console.WriteLine("2° Valor: " + val5 + "                                                                                        " + val5);
+                                        val5--;
+                                        dec4 = dec4 + val5;
+                                    }
+                                    Console.WriteLine("                                                                                             +_______________");
+                                    Console.WriteLine("A soma de todos os numeros inteiros (anteriores ao valor 2) é: " + dec4 + "                                  " + dec4);
+                                    break;
+                                
+                            }
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                                    Console.Clear();
+                                    break;
+
+                                case 5:
+                                    //Quest 05 - Faça um programa em C# que imprima todos os múltiplos de 3, entre 1 e 100.
+                                     Console.WriteLine("Quest 05 - Faça um programa em C# que imprima todos os múltiplos de 3, entre 1 e 100.");
+                                            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                                     int num7 = 3;
+                                     Console.WriteLine("Multiplos de 3 são:");
+                                        for (int g = 0; num7 < 100; g++)
+                                        {
+                                          Console.WriteLine(num7);
+                                          num7 += 3;
+                                        }
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                                     Console.Clear(); ;
+                                     break;
+                                case 6:
+                                     //Quest 06 - Escreva um algoritmo que calcule e imprima a tabuada do 8(1 a 10).
+
+                                     Console.WriteLine("----- TABUADA -----");
+                                     Console.Write("Quero a tabuada de ");
+                                     int tab = int.Parse(Console.ReadLine());
+                                     Console.Clear();
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                                     int num8 = tab;
+                                     int numvzs = 1;
+                                            for (int h = 0; h < 10; h++)
+                                            {
+                                                Console.WriteLine(num8 + " x " + numvzs + " = " + (num8 * numvzs));
+                                                numvzs++;
+                                            }
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                                     Console.Clear();
+                                     break;
+
+                                        //Quest 07 - Escreva um algoritmo que leia um conjunto de 20 números inteiros e mostre qual foi o maior e o menor valor fornecido.
+                                        case 7:
+                                     Console.WriteLine("Quest 07 - Escreva um algoritmo que leia um conjunto de 20 números inteiros e mostre qual foi o maior e o menor valor fornecido.");
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1.5));
+                                     Console.Write("Digite o número ");
+                                     int valorAux = int.Parse(Console.ReadLine());
+                                     int valorMaior = valorAux;
+                                     int valorMenor = valorAux;
+                                            for (int i = 1; i <= 20; i++)
+                                            {
+                                                Console.Write("Digite o número ");
+                                                valorAux = int.Parse(Console.ReadLine());
+                                                    if (valorAux > valorMaior)
+                                                    {
+                                                        valorMaior = valorAux;
+                                                    }
+                                                    else if (valorAux < valorMenor)
+                                                    {
+                                                        valorMenor = valorAux;
+                                                    }
+                                            }
+                                     Console.WriteLine("O maior valor é: " + valorMaior + " o valor menor é: " + valorMenor);
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                                     Console.Clear();
+                                     break;
+                                        case 8:
+                                            //Quest 08 - Dado um número “N”, imprimir na tela a sequência de Fibonacci até a posição do número informado. (Fibonacci)
+                                     Console.WriteLine("Digite o valor para saber a sequencia de Fibonacci");
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1));
+                                     int sequencia = int.Parse(Console.ReadLine());
+                                     int seqUm = 0;
+                                     int seqDois = 1;
+                                     int seqAux = 0;
+                                            for (int j = 1; j < sequencia; j++)
+                                            {
+                                                seqAux = seqUm + seqDois;
+                                                seqUm = seqDois;
+                                                seqDois = seqAux;
+                                            }
+
+                                            if (sequencia == 0)
+                                            {
+                                                Console.WriteLine("A sequencia de Fibonacci é: " + sequencia);
+                                            }
+
+                                            else
+                                            {
+                                                Console.WriteLine("A sequencia de Fibonacci é: " + seqDois);
+                                            }
+                                        System.Threading.Thread.Sleep(TimeSpan.FromSeconds(7));
+                                     Console.Clear();
+                                     break;
+                    }
+            }
+            Console.Clear();
+            Console.WriteLine("OBRIGADO PELO TESTE!!!!!!!!!!!!!!!!!!!!!");

@@ -1,0 +1,146 @@
+//Quest 01 -  Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive)em ordem crescente. 
+            { /*
+                int n = 1;
+                for (int i = 0; i < 10; i++)
+                {
+
+                    Console.WriteLine(n);
+                    n++;
+                } */
+            }
+
+            //Quest 02 - Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive)em ordem decrescente. 
+            {/*
+                 int n2 = 10;
+                 for (int i = 0; i < 10; i++)
+                 {
+
+                     Console.WriteLine(n2);
+                     n2--;
+                 }*/
+            }
+
+            //Quest 03 - Faça um programa em C# que imprima a soma dos números de 1 até 100.
+            { /*
+                int n = 1;
+                int n2 = n + 1;
+                for (int i = 0; i < 50; i++)
+                {
+                    Console.WriteLine(n + " + " + n2 + " = " + (n + n2));
+                    n++;
+                    n2++;
+                    int n3 = n + n2;
+                } */
+
+            }
+
+            //Quest 04 - 4.Ler 2 valores, calcular e escrever a soma dos inteiros existentes entre os 2 valores lidos (incluindo os valores lidos na soma). Considere que o segundo valor lido será sempre maior que o primeiro valor lido.            
+            { /*
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Bem Vindo ao Programa de Decomposição Númerica");                
+                Console.WriteLine("\nSe deseja utilizar o Programa que diz a soma de números entre a diferença de 2 números, Digite 1");
+                Console.WriteLine("Se deseja utilizar o Programa que diz a soma dos algarismos anteriores de um número, digite 2");                
+                Console.Write("Eu desejo utilizar o programa ");
+                int num = int.Parse(Console.ReadLine());
+                Console.Clear();
+                switch (num)
+                {
+                    case 1:
+                        Console.WriteLine("Digite dois valores, que eu direi a soma dos números que existem entre eles");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("OBS.: O Segundo número tem que ser maior");                        
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        int val = int.Parse(Console.ReadLine());
+                        int valorInicial1 = val;
+                        int val2 = int.Parse(Console.ReadLine());
+                        int valorInicial2 = val2;
+                        int val3 = (val2 - val);
+
+                        int dec1 = (valorInicial2 - valorInicial1);
+                        for (int i = 0; i < (valorInicial2 - valorInicial1); i++)
+                        {
+                            Console.WriteLine("1° Valor " + val + " - 2° Valor = " + val2);
+                            val2--;
+                            dec1 = dec1 + val2;
+                        }
+                        Console.WriteLine("\nValor da soma de tudim: " + dec1);
+                        break;
+
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Cyan;                        
+                        Console.WriteLine("Digite qual será o primeiro valor, e depois você ver a soma de seus termos anteriores: ");
+
+                        int val4 = int.Parse(Console.ReadLine());
+                        int valorInicial3 = val4;
+                        int dec3 = valorInicial3;
+                        for (int i = 0; i < valorInicial3; i++)
+                        {
+                            Console.WriteLine("1° Valor: " + val4 + "                                                                                        " + val4);
+                            val4--;
+                            dec3 = dec3 + val4;
+                        }
+                        Console.WriteLine("                                                                                             +_______________");
+                        Console.WriteLine("A soma de todos os numeros inteiros (anteriores ao valor 1) é: " + dec3 + "                                  " + dec3);
+
+                        Console.WriteLine("\n");
+
+                        Console.WriteLine("Digite qual será o segundo valor, e depois você ver a soma de seus termos anteriores: ");
+                        int val5 = int.Parse(Console.ReadLine()); ;
+                        int valorInicial4 = val5;
+                        int dec4 = valorInicial4;
+                        for (int i = 0; i < valorInicial4; i++)
+                        {
+                            Console.WriteLine("2° Valor: " + val5 + "                                                                                        " + val5);
+                            val5--;
+                            dec4 = dec4 + val5;
+                        }
+                        Console.WriteLine("                                                                                             +_______________");
+                        Console.WriteLine("A soma de todos os numeros inteiros (anteriores ao valor 2) é: " + dec4 + "                                  " + dec4);
+                        break;
+
+                }
+*/
+            }
+
+            //Quest 05 -5.Faça um programa em C# que imprima todos os múltiplos de 3, entre 1 e 100.
+            { /*
+            int num = 3;
+            Console.WriteLine("Multiplos de 3 são:");
+            for (int i = 0; num < 100; i++)
+            {
+                Console.WriteLine(num);
+                num += 3;                
+            }
+            */
+            }
+
+            //Quest 06 - 6.Escreva um algoritmo que calcule e imprima a tabuada do 8 (1 a 10). 
+            { /*
+            Console.WriteLine("----- TABUADA -----");
+            Console.Write("Quero a tabuada de ");
+            int tab = int.Parse(Console.ReadLine());
+            Console.Clear();
+            int num = tab;
+            int numvzs = 1;            
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(num + " x " + numvzs + " = " + (num*numvzs) );
+                numvzs++;
+            }
+            */
+            }
+
+            //Quest 08 - Fibonacci
+
+            Console.WriteLine("Digite um número, que eu direi o número da sequência de Fibonacci correspondente");
+            int num = int.Parse(Console.ReadLine());
+            int n = 1;
+            int f = (n-1) + n;
+            for (int i = 0; i < num; i++)
+            {
+                Console.WriteLine(f);
+                n = n*2;
+                f = 2*n - 1;
+            } b

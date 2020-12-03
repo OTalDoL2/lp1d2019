@@ -1,0 +1,11 @@
+Olá, eu (L2, ou Lucas M) criei esse repositório. 
+Nele existem códigos feitos por mim, e outros feitos em conjunto. Os colaboradores são:
+-André Filipe
+-Gustavo Rodrigues
+-Lucas Santos (L1)
+-Victor da Costa
+
+OBS.: Os códigos foram postados com a autorização de todos.
+Se encontrar algum problema, ou souber uma forma mais fácil e eficiente de fazer esses
+algoritmos, me chama no Discord, que a gente troca uma ideia.
+Para entrar em contato comigo, basta me chamar no Discord: Lucas "L2" Matheus | 2D#9204

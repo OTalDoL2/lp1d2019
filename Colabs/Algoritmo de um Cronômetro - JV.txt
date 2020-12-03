@@ -1,0 +1,34 @@
+int s = 0;
+            int min = 0;
+            int h = 0;
+            int d = 0;
+            while (d < 365)
+            {
+                
+                System.Threading.Thread.Sleep(TimeSpan.FromSeconds(1));
+                Console.Clear();
+                Console.WriteLine(" Day: " + d + " Time: " + h + " : " + min + " : " + s);
+                s++;
+                switch(s)
+                {
+                    case 60:
+                        min++;
+                        s = 0;
+                        break;
+                }
+                switch (min)
+                {
+                    case 60:
+                        h++;
+                        min = 0;
+                        break;
+                }
+                switch (h)
+                {
+                    case 24:
+                        d++;
+                        h = 0;
+                        break;
+                }
+                
+            }

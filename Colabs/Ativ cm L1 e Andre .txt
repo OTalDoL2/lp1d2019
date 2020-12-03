@@ -1,0 +1,60 @@
+//Q02 
+            {
+                //Console.WriteLine("Digite as notas que o aluno tirou, e eu direi a média dele e se ele passou média = 6 .");
+                //Console.Write("Nota 1: ");
+                //double notas = double.Parse(Console.ReadLine());
+                //Console.Write("Nota 2: ");
+                //double notas2 = double.Parse(Console.ReadLine());
+                //Console.Write("Nota 3: ");
+                //double notas3 = double.Parse(Console.ReadLine());
+                //Console.Write("Nota 4: ");
+                //double notas4 = double.Parse(Console.ReadLine());
+
+
+                //double[] notasDoAluno = new double[4];
+                //{
+                //    notasDoAluno[0] = notas;
+                //    notasDoAluno[1] = notas2;
+                //    notasDoAluno[2] = notas3;
+                //    notasDoAluno[3] = notas4;
+                //}
+
+
+                //double media = ((notasDoAluno[0] + notasDoAluno[1] + notasDoAluno[2] + notasDoAluno[3]) / 4);
+                //if (media >= 6)
+                //{
+                //    Console.WriteLine("O Aluno passou, poi o mesmo tirou " + media + " na média.");
+                //}
+                //else
+                //{
+
+                //    Console.WriteLine("O Aluno não passou, poi o mesmo tirou " + media + " na média.");
+                //}
+            }
+            //Q03
+            { 
+                //int rosa = 0;
+                //int a = int.Parse(Console.ReadLine());
+                //int b = int.Parse(Console.ReadLine());
+                //int c = int.Parse(Console.ReadLine());
+
+                //int[] lista = new int[3];
+                //{
+                //    lista[0] = a;
+                //    lista[1] = b;
+                //    lista[2] = c;
+                //}
+
+                //for (int index = 0; index < lista.Length; index++)
+                //{
+                //    if (lista[index] == 5)
+                //    {
+                //        Console.WriteLine("o Valor 5 está na gaveta " + index);
+                //    }
+                //    else
+                //    {
+                //        rosa++;
+                //        continue;
+                //    }
+                //}
+            }
